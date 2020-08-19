@@ -10,8 +10,8 @@
 
 
 int main() {
-	std::shared_ptr<Motorbike> m_ptr = std::make_shared<Motorbike>(Motorbike("Xe may"));
-	std::shared_ptr<Car> c_ptr = std::make_shared<Car>(Car ("Xe o to"));
+	std::shared_ptr<Motorbike> m_ptr = std::make_shared<Motorbike>("Xe may");
+	std::shared_ptr<Car> c_ptr = std::make_shared<Car>("Xe o to");
 	std::shared_ptr<Tree> t_ptr = std::make_shared<Tree>("Cay", 1, 2);
 	std::shared_ptr<House> h_ptr = std::make_shared<House>("Nha", 3, 4);
 
