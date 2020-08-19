@@ -5,15 +5,19 @@ class StaticObject :
 {
 public:
     StaticObject() {
-        std::cout << "Creating a static object\n";
+//        std::cout << "Creating a static object\n";
     }
 
-    std::string get_name() {
-        return "Static Object\n";
+    explicit  StaticObject(std::string name, int x = 0, int y = 0) : BaseObject(name, x, y) {
+
+    }
+
+    void move(int x, int y) {
+        std::cout << "Static objects can't be moved\n";
     }
 
     ~StaticObject() {
-        std::cout << "Destroying a base object\n";
+//        std::cout << "Destroying a base object\n";
     }
 };
 

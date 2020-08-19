@@ -5,11 +5,15 @@ class Motorbike :
 {
 public:
     Motorbike() {
-        std::cout << "Creating a Motorbike\n";
+//        std::cout << "Creating a Motorbike\n";
+    }
+
+    explicit Motorbike(std::string name, int x = 0, int y = 0) : DynamicObject(name, x, y) {
+
     }
 
     ~Motorbike() {
-        std::cout << "Destroying a Motorbike\n";
+//        std::cout << "Destroying a Motorbike\n";
     }
 };
 
